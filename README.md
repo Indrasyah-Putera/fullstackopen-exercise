@@ -1,4 +1,4 @@
-# mermaid-markdow
+# 0.4 New note diagram
 ```mermaid
 sequenceDiagram
 Note left of Browser: User fill in the form and click save button
