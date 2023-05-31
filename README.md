@@ -1,7 +1,18 @@
 # mermaid-markdown
 ```mermaid
 sequenceDiagram
-Browser->> Server: GET
+Note left of Browser: User fill in the form and click save button
+Browser->> Server: HTTP POST request https://studies.cs.helsinki.fi/exampleapp/new_note
 activate Server
-Server-->> Browser: RETURN
+Server-->> Browser: Status Code: 302
+Browser->> Server: HTTP GET request /exampleapp/notes
+Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->> Browser: HTML document
+Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->> Browser: CSS document
+Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->> Browser: JavaScript document
+Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->> Browser: data.json document
+
 ```
