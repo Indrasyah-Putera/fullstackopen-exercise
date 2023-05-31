@@ -14,5 +14,9 @@ Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/ma
 Server-->> Browser: JavaScript document
 Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/data.json
 Server-->> Browser: data.json document
-
 ```
+# 0.5 Single page app diagram
+```mermaid
+journey
+```
+
