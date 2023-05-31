@@ -1,4 +1,4 @@
-# mermaid-markdown
+# mermaid-markdow
 ```mermaid
 sequenceDiagram
 Note left of Browser: User fill in the form and click save button
