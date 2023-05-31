@@ -6,6 +6,7 @@ Browser->> Server: HTTP POST request https://studies.cs.helsinki.fi/exampleapp/n
 activate Server
 Server-->> Browser: Status Code: 302
 Browser->> Server: HTTP GET request /exampleapp/notes
+Note left of Browser: Browser refresh
 Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/notes
 Server-->> Browser: HTML document
 Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/main.css
