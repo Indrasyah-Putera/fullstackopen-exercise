@@ -3,5 +3,5 @@
 sequenceDiagram
 Browser->> Server: GET
 activate Server
-Server->> Browser: RETURN
+Server-->> Browser: RETURN
 '''
