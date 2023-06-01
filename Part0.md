@@ -18,6 +18,7 @@ Server-->> Browser: data.json document
 # 0.5 Single page app diagram
 ```mermaid
 sequenceDiagram
+Note: User goes into the SPA version
 Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/spa
 Server-->> Browser: HTML document
 Browser->> Server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/main.css
