@@ -17,6 +17,10 @@ Server-->> Browser: data.json document
 ```
 # 0.5 Single page app diagram
 ```mermaid
-journey
+sequenceDiagram
+Browser->> Server: HTTP GET request 
+Server-->> Browser: HTML document
+Browser->> Server: AJAX
+Server--> Browser: JSON document
 ```
 
